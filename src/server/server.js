@@ -34,7 +34,7 @@ app.locals.pool = pool;
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://your-frontend-name.vercel.app"
+    "https://typing-test-7w2y.vercel.app"
   ],
   credentials: true
 }));
