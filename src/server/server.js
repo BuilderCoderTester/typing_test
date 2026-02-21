@@ -32,8 +32,11 @@ app.locals.pool = pool;
 
 // CORS
 app.use(cors({
-    origin: process.env.NODE_ENV === 'production' ? true : 'http://localhost:5173',
-    credentials: true
+  origin: [
+    "http://localhost:5173",
+    "https://your-frontend-name.vercel.app"
+  ],
+  credentials: true
 }));
 
 app.use(express.json());
