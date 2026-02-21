@@ -8,7 +8,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'https://typing-test-7w2y.vercel.app/',
+        target: 'https://typing-test-7w2y.vercel.app',
         changeOrigin: true,
         secure: false,
       }
